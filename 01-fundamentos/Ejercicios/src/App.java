@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 import Bucles.EjBucles;
 import EstructurasCondicionales.EjEstructurasCondicionales;
+import JuegosCartas.ReparteCartas;
+import LeyDhont.LeyDhont;
 import Notas.EjNotas;
 import OperacionesBasicas.TiposDatosYOperacionesBasicas;
 import Primitiva.Primitiva;
@@ -18,6 +20,8 @@ public class App {
         System.out.println("4. Repaso de Estructuras Basicas");
         System.out.println("5. Notas");
         System.out.println("6. Primitiva");
+        System.out.println("7. Reparte Cartas");
+        System.out.println("8. Ley Dhont");
         System.out.print("\nElige una opción: ");
         int opcion = sc.nextInt();
 
@@ -39,6 +43,12 @@ public class App {
                 break;
             case 6:
                 new Primitiva();
+                break;
+            case 7:
+                new ReparteCartas();
+                break;
+            case 8:
+                new LeyDhont();
                 break;
             default:
                 System.out.println("Opción no válida");
